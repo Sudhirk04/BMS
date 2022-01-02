@@ -1,0 +1,14 @@
+.. spelling::
+    ba
+    bbff
+    defaul
+    dir
+    eb
+    ed
+    fc
+    fd
+    GCC
+    haa
+    hcd
+    pyh
+    pyhd

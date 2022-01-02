@@ -1,0 +1,672 @@
+{
+  "binary": [
+    "coverage",
+    "svg",
+    "pyc",
+    "png",
+    "gif",
+    "ico",
+    "vsdx",
+    "tar.bz2",
+    "tar.gz",
+    "tar",
+    "zip",
+    "7z"
+  ],
+  "global": [
+    ".git/**",
+    ".vscode/**",
+    ".mypy_cache/**",
+    "build/**",
+    "libbuild/**",
+    "**/foxbms-2_axivion_report.json",
+    "build-tools-tests/**",
+    "conf/hcg/include/*",
+    "conf/hcg/source/*",
+    "src/app/driver/sbc/fs8x_driver/**",
+    "src/os/freertos/include/**",
+    "src/os/freertos/portable/**",
+    "src/os/freertos/croutine.c",
+    "src/os/freertos/event_groups.c",
+    "src/os/freertos/GitHub-FreeRTOS-Kernel-Home.url",
+    "src/os/freertos/History.txt",
+    "src/os/freertos/LICENSE.md",
+    "src/os/freertos/list.c",
+    "src/os/freertos/queue.c",
+    "src/os/freertos/Quick_Start_Guide.url",
+    "src/os/freertos/README.md",
+    "src/os/freertos/stream_buffer.c",
+    "src/os/freertos/tasks.c",
+    "src/os/freertos/timers.c",
+    "src/os/freertos/uncrustify.cfg",
+    "docs/_ext/**",
+    "foxbms/**",
+    "tools/waf3-**",
+    "tools/.waf3-**",
+    "**/__pycache__/**",
+    "**/*~",
+    ".lock-waf_*_build",
+    "tools/vendor/**",
+    "tools/waf",
+    "tools/waf-verify-sig.py",
+    "tests/scripts/waf-tools/f_guidelines/tests/**",
+    "tests/scripts/waf-core/general/**",
+    "tests/scripts/waf-core/init/**",
+    "tests/scripts/waf-core/install/**",
+    "tests/scripts/waf-core/install_group/**",
+    "tests/scripts/waf-core/preproc/**",
+    "**/**.log"
+  ],
+  "file_names": {
+    "name": "GENERAL:001",
+    "regex": "^[a-z0-9_\\-.]*$",
+    "exclude": [
+      ".github/PULL_REQUEST_TEMPLATE.md",
+      ".gitlab/**",
+      "CITATION.cff",
+      "BSD-3-Clause.txt",
+      "CC-BY-4.0.txt",
+      "CHANGELOG.md",
+      "LICENSE.md",
+      "**/README.md",
+      "conf/hcg/**/*.asm",
+      "conf/hcg/**/*.cmd",
+      "conf/hcg/**/*.c",
+      "conf/hcg/**/*.h",
+      "src/app/driver/afe/nxp/common/MC33775A.h",
+      "src/os/freertos/README.ti-halcogen.md",
+      "tests/axivion/cafeCC.config"
+    ]
+  },
+  "unique_filenames": {
+    "name": "GENERAL:002",
+    "exclude": [
+      "**/.gitignore",
+      "**/.dummy",
+      "**/README.md",
+      "**/wscript",
+      "**/__init__.py",
+      "**/.clang-format"
+    ]
+  },
+  "encoding": {
+    "name": "GENERAL:003",
+    "default": "utf-8",
+    "exceptions": [
+      {
+        "**/*.sym": "ascii"
+      },
+      {
+        "**/*.dbc": "ascii"
+      },
+      {
+        "**/*.c": "ascii"
+      },
+      {
+        "**/*.h": "ascii"
+      },
+      {
+        "src/**/*.cmd": "ascii"
+      }
+    ]
+  },
+  "posix_3.206": {
+    "name": "GENERAL:004",
+    "exclude": [
+      "**/*.patch",
+      "**/*.sym",
+      "**/*.dbc",
+      "tools/utils/git-hooks/pre-commit"
+    ]
+  },
+  "trailing_whitespace": {
+    "name": "GENERAL:005",
+    "exclude": [
+      "**/*.dil",
+      "**/*.patch",
+      "tools/gui/data/pcan_view_v2.0.trc",
+      "**/*.sym",
+      "**/*.dbc"
+    ]
+  },
+  "tabs": {
+    "name": "GENERAL:006",
+    "exclude": [
+      "**/*.sym"
+    ]
+  },
+  "languages": {
+    "C": {
+      "exclude": [],
+      "files": [
+        "**/*.c",
+        "**/*.h",
+        "src/app/main/linker_script_elf.cmd"
+      ],
+      "header": {
+        "name": "C:002",
+        "exclude": [
+          "src/app/driver/sbc/fs8x_driver/**",
+          "src/app/driver/afe/ltc/common/ltc_pec.*",
+          "src/app/driver/afe/nxp/common/MC33775A.h"
+        ],
+        "text": [
+          "/**",
+          " *",
+          " * @copyright &copy; 2010 - @YEAR@, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.",
+          " * All rights reserved.",
+          " *",
+          " * SPDX-License-Identifier: BSD-3-Clause",
+          " *",
+          " * Redistribution and use in source and binary forms, with or without",
+          " * modification, are permitted provided that the following conditions are met:",
+          " *",
+          " * 1. Redistributions of source code must retain the above copyright notice, this",
+          " *    list of conditions and the following disclaimer.",
+          " *",
+          " * 2. Redistributions in binary form must reproduce the above copyright notice,",
+          " *    this list of conditions and the following disclaimer in the documentation",
+          " *    and/or other materials provided with the distribution.",
+          " *",
+          " * 3. Neither the name of the copyright holder nor the names of its",
+          " *    contributors may be used to endorse or promote products derived from",
+          " *    this software without specific prior written permission.",
+          " *",
+          " * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+          " * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+          " * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+          " * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+          " * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+          " * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+          " * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+          " * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+          " * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+          " * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          " *",
+          " * We kindly request you to use one or more of the following phrases to refer to",
+          " * foxBMS in your hardware, software, documentation or advertising materials:",
+          " *",
+          " * - &Prime;This product uses parts of foxBMS&reg;&Prime;",
+          " * - &Prime;This product includes parts of foxBMS&reg;&Prime;",
+          " * - &Prime;This product is derived from foxBMS&reg;&Prime;",
+          " *",
+          " */",
+          ""
+        ]
+      },
+      "doxygen": {
+        "name": "C:004",
+        "exclude": [
+          "docs/developer-manual/style-guide/examples/*.c",
+          "docs/developer-manual/style-guide/examples/*.h",
+          "src/app/driver/sbc/fs8x_driver/sbc_fs8x*.*",
+          "src/app/driver/afe/ltc/common/ltc_pec.*",
+          "src/app/driver/afe/nxp/common/MC33775A.h",
+          "src/app/main/linker_script_elf.cmd",
+          "src/os/**"
+        ],
+        "regex": [
+          "\/\\*\\*$",
+          "[ ]\\* (@file)[ ]{4}@FILENAME@$",
+          "[ ]\\* (@author)[ ]{2}foxBMS Team$",
+          "[ ]\\* (@date)[ ]{4}[0-9]{4}-[0-9]{2}-[0-9]{2}[ ]\\(date of creation\\)$",
+          "[ ]\\* (@updated)[ ][0-9]{4}-[0-9]{2}-[0-9]{2}[ ]\\(date of last update\\)$",
+          "[ ]\\* (@ingroup)[ ][A-Za-z_]+$",
+          "[ ]\\* (@prefix)[ ]{2}[A-Z][0-9A-Z]{1,4}$",
+          "([ ]\\*)",
+          "[ ]\\* (@brief)[ ]{3}\\S.*",
+          "[ ]\\*.*",
+          "[ ]\\*\/"
+        ]
+      },
+      "define_guard": {
+        "name": "C:005",
+        "include": [
+          "**/*.h"
+        ],
+        "exclude": [
+          "src/app/driver/sbc/fs8x_driver/**",
+          "src/app/driver/afe/ltc/common/ltc_pec.*",
+          "src/app/driver/afe/nxp/common/MC33775A.h",
+          "src/os/**"
+        ],
+        "prefix": "FOXBMS__",
+        "suffix": "_H_",
+        "replacements": [
+          {
+            "-": "_",
+            ".": "_"
+          }
+        ]
+      },
+      "sections": {
+        "exclude": [
+          "src/app/driver/afe/ltc/common/ltc_pec.*",
+          "src/app/driver/sbc/fs8x_driver/**",
+          "src/app/driver/afe/nxp/common/MC33775A.h",
+          "src/app/main/linker_script_elf.cmd"
+        ],
+        "name": "C:006",
+        "header": {
+          "exclude": [
+            "conf/tpl/test_c.h",
+            "docs/developer-manual/style-guide/examples/c-006-test.h",
+            "docs/developer-manual/style-guide/examples/c-007_abc*.h",
+            "docs/developer-manual/style-guide/examples/c-008.h",
+            "docs/developer-manual/style-guide/examples/c-011.h",
+            "docs/developer-manual/style-guide/examples/c-013.h",
+            "docs/developer-manual/style-guide/examples/c-015.h",
+            "tests/unit/**"
+          ],
+          "sections": [
+            "/*========== Includes =======================================================*/",
+            "/*========== Macros and Definitions =========================================*/",
+            "/*========== Extern Constant and Variable Declarations ======================*/",
+            "/*========== Extern Function Prototypes =====================================*/",
+            "/*========== Externalized Static Functions Prototypes (Unit Test) ===========*/"
+          ]
+        },
+        "source": {
+          "exclude": [
+            "conf/tpl/test_c.c",
+            "docs/developer-manual/style-guide/examples/c-004.c",
+            "docs/developer-manual/style-guide/examples/c-005.c",
+            "docs/developer-manual/style-guide/examples/c-006-test.c",
+            "docs/developer-manual/style-guide/examples/c-007_abc*.c",
+            "docs/developer-manual/style-guide/examples/c-008.c",
+            "docs/developer-manual/style-guide/examples/c-009.c",
+            "docs/developer-manual/style-guide/examples/c-011.c",
+            "docs/developer-manual/style-guide/examples/c-012.c",
+            "docs/developer-manual/style-guide/examples/c-013.c",
+            "docs/developer-manual/style-guide/examples/c-015.c",
+            "docs/developer-manual/style-guide/examples/c-016.c",
+            "docs/developer-manual/style-guide/examples/c-017.c",
+            "docs/developer-manual/style-guide/examples/c-018.c",
+            "docs/developer-manual/style-guide/examples/c-018.c",
+            "docs/developer-manual/style-guide/examples/c-019.c",
+            "docs/developer-manual/style-guide/examples/c-020.c",
+            "docs/developer-manual/style-guide/examples/c-021.c",
+            "docs/developer-manual/style-guide/examples/c-022.c",
+            "docs/developer-manual/style-guide/examples/c-023.c",
+            "docs/developer-manual/style-guide/examples/c-024.c",
+            "docs/developer-manual/style-guide/examples/c-025.c",
+            "docs/developer-manual/style-guide/examples/c-026.c",
+            "docs/developer-manual/style-guide/examples/c-027.c",
+            "docs/developer-manual/style-guide/examples/c-028*.c",
+            "tests/unit/**",
+            "tests/variants/**",
+            "src/app/driver/config/can_cfg.c",
+            "src/app/engine/config/sys_mon_cfg.c",
+            "src/app/engine/config/diag_cfg.c"
+          ],
+          "sections": [
+            "/*========== Includes =======================================================*/",
+            "/*========== Macros and Definitions =========================================*/",
+            "/*========== Static Constant and Variable Definitions =======================*/",
+            "/*========== Extern Constant and Variable Definitions =======================*/",
+            "/*========== Static Function Prototypes =====================================*/",
+            "/*========== Static Function Implementations ================================*/",
+            "/*========== Extern Function Implementations ================================*/",
+            "/*========== Externalized Static Function Implementations (Unit Test) =======*/"
+          ]
+        },
+        "test_header": {
+          "exclude": [
+            "conf/tpl/c.h",
+            "docs/developer-manual/style-guide/examples/c-006-source.h",
+            "docs/developer-manual/style-guide/examples/c-007_abc*.h",
+            "docs/developer-manual/style-guide/examples/c-008.h",
+            "docs/developer-manual/style-guide/examples/c-011.h",
+            "docs/developer-manual/style-guide/examples/c-013.h",
+            "docs/developer-manual/style-guide/examples/c-015.h",
+            "docs/developer-manual/style-guide/state-machine-example/state-machine.h",
+            "docs/software/build-process/misc/libproject-example.h",
+            "src/**",
+            "tests/variants/lib-build/*"
+          ],
+          "sections": [
+            "/*========== Includes =======================================================*/",
+            "/*========== Macros and Definitions =========================================*/"
+          ]
+        },
+        "test_source": {
+          "exclude": [
+            "conf/tpl/c.c",
+            "docs/developer-manual/style-guide/examples/c-004.c",
+            "docs/developer-manual/style-guide/examples/c-005.c",
+            "docs/developer-manual/style-guide/examples/c-006-source.c",
+            "docs/developer-manual/style-guide/examples/c-007_abc*.c",
+            "docs/developer-manual/style-guide/examples/c-008.c",
+            "docs/developer-manual/style-guide/examples/c-009.c",
+            "docs/developer-manual/style-guide/examples/c-011.c",
+            "docs/developer-manual/style-guide/examples/c-012.c",
+            "docs/developer-manual/style-guide/examples/c-013.c",
+            "docs/developer-manual/style-guide/examples/c-015.c",
+            "docs/developer-manual/style-guide/examples/c-016.c",
+            "docs/developer-manual/style-guide/examples/c-017.c",
+            "docs/developer-manual/style-guide/examples/c-018.c",
+            "docs/developer-manual/style-guide/examples/c-018.c",
+            "docs/developer-manual/style-guide/examples/c-019.c",
+            "docs/developer-manual/style-guide/examples/c-020.c",
+            "docs/developer-manual/style-guide/examples/c-021.c",
+            "docs/developer-manual/style-guide/examples/c-022.c",
+            "docs/developer-manual/style-guide/examples/c-023.c",
+            "docs/developer-manual/style-guide/examples/c-024.c",
+            "docs/developer-manual/style-guide/examples/c-025.c",
+            "docs/developer-manual/style-guide/examples/c-026.c",
+            "docs/developer-manual/style-guide/examples/c-027.c",
+            "docs/developer-manual/style-guide/examples/c-028*.c",
+            "docs/developer-manual/style-guide/state-machine-example/state-machine.c",
+            "docs/software/build-process/misc/libproject-example.c",
+            "docs/software/modules/engine/database/database_how-to.c",
+            "docs/software/modules/task/ftask/ftask_how-to.c",
+            "src/**",
+            "tests/variants/lib-build/*"
+          ],
+          "sections": [
+            "/*========== Includes =======================================================*/",
+            "/*========== Definitions and Implementations for Unit Test ==================*/",
+            "/*========== Setup and Teardown =============================================*/",
+            "/*========== Test Cases =====================================================*/"
+          ]
+        }
+      },
+      "comment-style": {
+        "name": "C:029",
+        "forbidden": "C99",
+        "exclude": []
+      },
+      "formatting": {
+        "name": "C:031",
+        "provider": "clang-format",
+        "exclude": [
+          "src/app/main/linker_script_elf.cmd"
+        ],
+        "config": ".clang-format"
+      }
+    },
+    "Python": {
+      "exclude": [
+        "tools/waf-tools/why.py",
+        "tools/waf-tools/doxygen.py"
+      ],
+      "files": [
+        "**/*.py",
+        "**/wscript"
+      ],
+      "header": {
+        "name": "PYTHON:002",
+        "exclude": [],
+        "text": [
+          "#!/usr/bin/env python3",
+          "# -*- coding: utf-8 -*-",
+          "#",
+          "# Copyright (c) 2010 - @YEAR@, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.",
+          "# All rights reserved.",
+          "#",
+          "# SPDX-License-Identifier: BSD-3-Clause",
+          "#",
+          "# Redistribution and use in source and binary forms, with or without",
+          "# modification, are permitted provided that the following conditions are met:",
+          "#",
+          "# 1. Redistributions of source code must retain the above copyright notice, this",
+          "#    list of conditions and the following disclaimer.",
+          "#",
+          "# 2. Redistributions in binary form must reproduce the above copyright notice,",
+          "#    this list of conditions and the following disclaimer in the documentation",
+          "#    and/or other materials provided with the distribution.",
+          "#",
+          "# 3. Neither the name of the copyright holder nor the names of its",
+          "#    contributors may be used to endorse or promote products derived from",
+          "#    this software without specific prior written permission.",
+          "#",
+          "# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+          "# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+          "# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+          "# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+          "# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+          "# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+          "# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+          "# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+          "# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+          "# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          "#",
+          "# We kindly request you to use one or more of the following phrases to refer to",
+          "# foxBMS in your hardware, software, documentation or advertising materials:",
+          "#",
+          "# - \"This product uses parts of foxBMS®\"",
+          "# - \"This product includes parts of foxBMS®\"",
+          "# - \"This product is derived from foxBMS®\"",
+          ""
+        ]
+      },
+      "formatting": {
+        "name": "PYTHON:004",
+        "provider": "black",
+        "exclude": [
+          "tools/waf-tools/why.py",
+          "**/*waf3-**.*-*/**",
+          "**/c4che/**",
+          ".vscode/**"
+        ]
+      },
+      "static_program_analysis": {
+        "name": "PYTHON:005",
+        "provider": "pylint",
+        "exclude": [
+          "tools/waf-tools/why.py",
+          "**/*waf3-**.*-*/**",
+          "**/c4che/**",
+          ".vscode/**"
+        ]
+      }
+    },
+    "reStructuredText": {
+      "exclude": [],
+      "files": [
+        "**/*.rst"
+      ],
+      "include": {
+        "name": "RST:003",
+        "exclude": [],
+        "include_files": [
+          {
+            "macros.txt": {
+              "exclude": [
+                "docs/general/team-ad-sc.rst",
+                "docs/general/team-dev.rst",
+                "docs/general/team-former.rst"
+              ],
+              "regex": ".. include:: .{1,2}(/(..|\\w+))*/macros.txt"
+            }
+          },
+          {
+            "units.txt": {
+              "exclude": [
+                "docs/general/team.rst",
+                "docs/general/team-ad-sc.rst",
+                "docs/general/team-dev.rst",
+                "docs/general/team-former.rst",
+                "docs/misc/acknowledgements.rst"
+              ],
+              "regex": ".. include:: .{1,2}(/(..|\\w+))*/units.txt"
+            }
+          }
+        ]
+      },
+      "heading": {
+        "name": "RST:005",
+        "exclude": [
+          "docs/general/team-ad-sc.rst",
+          "docs/general/team-dev.rst",
+          "docs/general/team-former.rst",
+          "docs/tools/waf-tools/f_*.rst",
+          "docs/tools/waf-tools/compiler-tool/f_*.rst"
+        ]
+      },
+      "orphan": {
+        "name": "RST:006",
+        "include": []
+      }
+    },
+    "YAML": {
+      "exclude": [
+        "conf/env/conda_env_*.yaml"
+      ],
+      "files": [
+        "**/*.yaml",
+        "**/*.yml",
+        "**/*.dot"
+      ],
+      "header": {
+        "name": "YAML:002",
+        "exclude": [],
+        "text": [
+          "# Copyright (c) 2010 - @YEAR@, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.",
+          "# All rights reserved.",
+          "#",
+          "# SPDX-License-Identifier: BSD-3-Clause",
+          "#",
+          "# Redistribution and use in source and binary forms, with or without",
+          "# modification, are permitted provided that the following conditions are met:",
+          "#",
+          "# 1. Redistributions of source code must retain the above copyright notice, this",
+          "#    list of conditions and the following disclaimer.",
+          "#",
+          "# 2. Redistributions in binary form must reproduce the above copyright notice,",
+          "#    this list of conditions and the following disclaimer in the documentation",
+          "#    and/or other materials provided with the distribution.",
+          "#",
+          "# 3. Neither the name of the copyright holder nor the names of its",
+          "#    contributors may be used to endorse or promote products derived from",
+          "#    this software without specific prior written permission.",
+          "#",
+          "# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+          "# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+          "# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+          "# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+          "# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+          "# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+          "# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+          "# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+          "# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+          "# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          "#",
+          "# We kindly request you to use one or more of the following phrases to refer to",
+          "# foxBMS in your hardware, software, documentation or advertising materials:",
+          "#",
+          "# - \"This product uses parts of foxBMS®\"",
+          "# - \"This product includes parts of foxBMS®\"",
+          "# - \"This product is derived from foxBMS®\"",
+          ""
+        ]
+      }
+    },
+    "batch": {
+      "exclude": [
+        "src/app/main/linker_script_elf.cmd",
+        "src/app/main/linker_script_hex.cmd"
+      ],
+      "files": [
+        "**/*.bat",
+        "**/*.cmd"
+      ],
+      "header": {
+        "name": "BATCH:002",
+        "exclude": [
+          "tests/axivion/racepdfs/make_race_pdfs.bat"
+        ],
+        "text": [
+          "@REM Copyright (c) 2010 - @YEAR@, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.",
+          "@REM All rights reserved.",
+          "@REM",
+          "@REM SPDX-License-Identifier: BSD-3-Clause",
+          "@REM",
+          "@REM Redistribution and use in source and binary forms, with or without",
+          "@REM modification, are permitted provided that the following conditions are met:",
+          "@REM",
+          "@REM 1. Redistributions of source code must retain the above copyright notice, this",
+          "@REM    list of conditions and the following disclaimer.",
+          "@REM",
+          "@REM 2. Redistributions in binary form must reproduce the above copyright notice,",
+          "@REM    this list of conditions and the following disclaimer in the documentation",
+          "@REM    and/or other materials provided with the distribution.",
+          "@REM",
+          "@REM 3. Neither the name of the copyright holder nor the names of its",
+          "@REM    contributors may be used to endorse or promote products derived from",
+          "@REM    this software without specific prior written permission.",
+          "@REM",
+          "@REM THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+          "@REM AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+          "@REM IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+          "@REM DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+          "@REM FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+          "@REM DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+          "@REM SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+          "@REM CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+          "@REM OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+          "@REM OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          "@REM",
+          "@REM We kindly request you to use one or more of the following phrases to refer to",
+          "@REM foxBMS in your hardware, software, documentation or advertising materials:",
+          "@REM",
+          "@REM - \"This product uses parts of foxBMS&reg;\"",
+          "@REM - \"This product includes parts of foxBMS&reg;\"",
+          "@REM - \"This product is derived from foxBMS&reg;\"",
+          ""
+        ]
+      }
+    },
+    "shell": {
+      "exclude": [],
+      "files": [
+        "**/*.sh"
+      ],
+      "header": {
+        "name": "SHELL:002",
+        "exclude": [],
+        "text": [
+          "#!/usr/bin/env bash",
+          "#",
+          "# Copyright (c) 2010 - @YEAR@, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.",
+          "# All rights reserved.",
+          "#",
+          "# SPDX-License-Identifier: BSD-3-Clause",
+          "#",
+          "# Redistribution and use in source and binary forms, with or without",
+          "# modification, are permitted provided that the following conditions are met:",
+          "#",
+          "# 1. Redistributions of source code must retain the above copyright notice, this",
+          "#    list of conditions and the following disclaimer.",
+          "#",
+          "# 2. Redistributions in binary form must reproduce the above copyright notice,",
+          "#    this list of conditions and the following disclaimer in the documentation",
+          "#    and/or other materials provided with the distribution.",
+          "#",
+          "# 3. Neither the name of the copyright holder nor the names of its",
+          "#    contributors may be used to endorse or promote products derived from",
+          "#    this software without specific prior written permission.",
+          "#",
+          "# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"",
+          "# AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE",
+          "# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE",
+          "# DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE",
+          "# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL",
+          "# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR",
+          "# SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER",
+          "# CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,",
+          "# OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE",
+          "# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+          "#",
+          "# We kindly request you to use one or more of the following phrases to refer to",
+          "# foxBMS in your hardware, software, documentation or advertising materials:",
+          "#",
+          "# - \"This product uses parts of foxBMS&reg;\"",
+          "# - \"This product includes parts of foxBMS&reg;\"",
+          "# - \"This product is derived from foxBMS&reg;\"",
+          ""
+        ]
+      }
+    }
+  }
+}
